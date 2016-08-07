@@ -14,10 +14,6 @@ J = 0;
 %               You should set J to the cost.
 
 predictions = (X * theta - y)' * (X * theta - y);
-%predictions = X * theta;
-%sqrErrors = (predictions - y).^2;
-
-%J = 1/(2*m)*sum(sqrErrors);
 J = 1/(2*m)*predictions;
 
 
